@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+    <!-- Display the layout in a div -->
+    <div w3-include-html="/resources/views/layouts.html" id="navbar-interest"></div>
+
+    <!-- Interests heading section -->
+    <section class="interests-heading" id="interests-heading">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2">
+                    <h1 class="section heading">Movies</h1>
+                </div>
+                <!-- Go back to home -->
+                <div class="col-lg-10">
+                    <button class="btn btn-outline-dark btn-sm" onclick="goBack()">Go Back</button>
+                    <script>
+                        function goBack() {
+                            window.history.back();
+                        }
+                    </script>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-8">
+                    <p>Biography, Science fiction, Action, Adventure, and Fantasy are my most interesting genres of
+                        movies. In the past couple of decades, I watched over 250 movies on different genres. Lots of
+                        movies are enjoyable and some others are inspirational especially biographies. The presented
+                        list enumerates all the movies I watched so far as I remembers.</p>
+
+                    
+
+                    <div class="movie-info" id="movie-info">
+                        <div class="container" id="movies"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row justify-content-center">
+                        <figure>
+                            <img style="width: 340px;" src="theimitationgame.jpg"
+                                alt="The Imitation Game Cover">
+                            <figcaption id="movie-caption">The Imitation Game</figcaption>
+                        </figure>
+                        <figure>
+                            <img style="width: 340px;" src="starwars.png"
+                                alt="Solo: A Star Wars Story">
+                            <figcaption id="movie-caption">Solo: A Star Wars Story</figcaption>
+                        </figure>
+                        <figure>
+                            <img style="width: 340px;" src="thegreatestshowman.jpeg"
+                                alt="The Greatest Showman Cover">
+                            <figcaption id="movie-caption">The Greatest Showman</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+</body>

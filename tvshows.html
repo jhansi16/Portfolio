@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <!-- Display the layout in a div -->
+    <div w3-include-html="/resources/views/layouts.html" id="navbar-interest"></div>
+
+    <!-- Interests heading section -->
+    <section class="interests-heading" id="interests-heading">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <h1 class="section heading">TV Shows</h1>
+                </div>
+                <!-- Go back to home -->
+                <div class="col-lg-9">
+                    <button class="btn btn-outline-dark btn-sm" onclick="goBack()">Go Back</button>
+                    <script>
+                        function goBack() {
+                            window.history.back();
+                        }
+                    </script>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="tvshow-info" id="tvshow-info">
+                        <div class="container" id="tvshows"></div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row justify-content-center">
+                        <figure>
+                            <img style="width: 340px;" src="thevampirediaries.jpg" alt="TVD">
+                            <figcaption id="tvshow-caption">The Vampire Dairies</figcaption>
+                        </figure>
+                        <figure>
+                            <img style="width: 340px;" src="sherlock.jpg" alt="Sherlock">
+                            <figcaption id="tvshow-caption">Sherlock</figcaption>
+                        </figure>
+                        <figure>
+                            <img style="width: 340px;" src="strangerthings.jpg" alt="Stranger things">
+                            <figcaption id="tvshow-caption">Stranger Things</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
